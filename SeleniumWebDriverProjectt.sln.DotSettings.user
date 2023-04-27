@@ -1,0 +1,26 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=01c11e90_002D8724_002D4289_002Db1dd_002D26de1d036ea9/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="WebFormTests #5" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2280FFCE-8E3B-43A1-8B85-164BBD49D6D8::net6.0::Tests.WebFormTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=456b158d_002D6924_002D4683_002D8c1f_002De08955d1184c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="WebFormTests #4" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2280FFCE-8E3B-43A1-8B85-164BBD49D6D8::net6.0::Tests.WebFormTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=86c79366_002Df159_002D442e_002Db947_002D16ee1944003a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="WebFormTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2280FFCE-8E3B-43A1-8B85-164BBD49D6D8::net6.0::Tests.WebFormTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b98c4b60_002D8862_002D4124_002D8543_002D69c98d136853/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="WebFormTests #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2280FFCE-8E3B-43A1-8B85-164BBD49D6D8::net6.0::Tests.WebFormTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ba5b250f_002Dcdb5_002D4db0_002D9ce4_002Dde2cd857728c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="WebFormTests #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2280FFCE-8E3B-43A1-8B85-164BBD49D6D8::net6.0::Tests.WebFormTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

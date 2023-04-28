@@ -1,5 +1,9 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=01c11e90_002D8724_002D4289_002Db1dd_002D26de1d036ea9/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="WebFormTests #5" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/AssemblyExplorer/XmlDocument/@EntryValue">&lt;AssemblyExplorer&gt;&#xD;
+  &lt;Assembly Path="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.5\ref\net6.0\System.Configuration.dll" /&gt;&#xD;
+  &lt;PhysicalFolder Path="C:\Users\Zolto\RiderProjects\SeleniumWebDriverProject\PageObjects\PageObjects" Loaded="True" /&gt;&#xD;
+&lt;/AssemblyExplorer&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=01c11e90_002D8724_002D4289_002Db1dd_002D26de1d036ea9/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="WebFormTests #5" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;NUnit3x::2280FFCE-8E3B-43A1-8B85-164BBD49D6D8::net6.0::Tests.WebFormTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
@@ -14,7 +18,7 @@
     &lt;TestId&gt;NUnit3x::2280FFCE-8E3B-43A1-8B85-164BBD49D6D8::net6.0::Tests.WebFormTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=55c9db88_002D17cd_002D47de_002Da06c_002Dd90161d6d228/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="WebFormTests #7" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=55c9db88_002D17cd_002D47de_002Da06c_002Dd90161d6d228/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="WebFormTests #7" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;NUnit3x::2280FFCE-8E3B-43A1-8B85-164BBD49D6D8::net6.0::Tests.WebFormTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;

@@ -21,13 +21,32 @@ public static class CommonClass
     /// <param name="locator"></param>
     public static void Click(this IWebDriver driver, By locator)
     {
+        WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+        wait.Until(ExpectedConditions.ElementToBeClickable(driver.FindElement(locator)));
         IWebElement ele = driver.FindElement(locator);
         if (ele.Displayed && ele.Enabled)
         {
             ele.Click();
         } 
     }
+    public static void Click(this IWebDriver driver, IWebElement ele)
+    {
+        if (ele.Displayed && ele.Enabled)
+        {
+            ele.Click();
+        }
+    }
     
+    /// <summary>
+    /// void by search for an element in a page 
+    /// </summary>
+    delegate void FindElement(By locator);
+    public static IWebElement FindElementWithWait(this IWebDriver driver, By selector)
+    {
+        var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(10));
+        return wait.Until(ExpectedConditions.ElementIsVisible(selector));
+    }
+
     public static void EnterText(this IWebDriver driver, By locator, string text)
     {
         IWebElement ele = driver.FindElement(locator);

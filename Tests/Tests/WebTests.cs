@@ -5,10 +5,9 @@ using Tests.Common;
 
 namespace Tests;
 
+[TestFixture]
 internal class WebFormTests:TestBase
 {
-    private IWebDriver _driver;
-    private SubmissionFormPageObject _targetPageObject;
     [Test]
     public void DoByCustom()
     {
@@ -22,16 +21,19 @@ internal class WebFormTests:TestBase
                 .TargetPage()
                 .GetMessage();
         Assert.That(message, Is.EqualTo(successfulText));
-        MainMenu
-            .transferPageTo()
-            .chooseCountries();
     }
 
-    
+    [Test]
     public void DoTransfer()
     {
+        var successfulText = "Search Tours in"+ " moscow";
+        var message =
         MainMenu
-            .transferPageTo();
+            .SubmitToLoginCustomer()
+            .DoLogin()
+            .transferPageTo()
+            .chooseCountries()
+            .GetMessageFromTransfer();
+        Assert.That(message, Is.EqualTo(successfulText.ToUpper()));
     }
-    
 }

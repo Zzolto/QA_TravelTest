@@ -1,8 +1,8 @@
 ﻿using OpenQA.Selenium;
 using NUnit.Framework;
 using OpenQA.Selenium.Chrome;
-using System;
 using BackitAuto;
+using System.Configuration;
 
 namespace Tests.Common
 {
@@ -17,6 +17,7 @@ namespace Tests.Common
         [SetUp]
         protected void Setup()
         {
+            string url = ConfigurationManager.AppSettings["Url"];
             Driver = new ChromeDriver();
             Driver.Manage().Cookies.DeleteAllCookies();
             Driver.Navigate().GoToUrl(_baseurl);

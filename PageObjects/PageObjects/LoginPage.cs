@@ -20,7 +20,7 @@ public class LoginPage:MainMenuPageObject
 
         driver.FindElement(_accountButton).Click();
         driver.FindElement(accountListInHeader["Customer Login"]).Click();
-        driver.FindElement(emailField).SendKeys("zolto_gunzenov@mail.ru");
+        driver.FindElement(emailField).SendKeys("test@mail.ru");
         driver.FindElement(passwordField).SendKeys("12345678");
         driver.FindElement(login).Click();
         return new MainMenuPageObject(driver);

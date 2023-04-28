@@ -11,7 +11,7 @@ public class SubmissionFormPageObject
     protected static By todayDate = By.XPath("//td[@class = 'day  active']");
     public static By _firstNameField = By.XPath("//input[@name = 'first_name']");
     protected static By submitButton = By.XPath("//i[@class ='mdi mdi-search']");
-
+    
     protected MainMenuPageObject helper()
     {
         TargetPage();
@@ -29,7 +29,7 @@ public class SubmissionFormPageObject
         IJavaScriptExecutor js = (IJavaScriptExecutor)_driver;
         
         js.ExecuteScript("window.scrollBy(0, 500);");
-        Thread.Sleep(2000);
+        Thread.Sleep(1000);
         _driver.FindElement(submitButton).Click();
         return new TargetPageObject(_driver);
     }

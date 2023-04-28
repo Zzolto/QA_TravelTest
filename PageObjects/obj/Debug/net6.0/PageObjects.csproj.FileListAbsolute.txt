@@ -19,3 +19,4 @@ C:\Users\Zolto\RiderProjects\SeleniumWebDriverProject\PageObjects\obj\Debug\net6
 C:\Users\Zolto\RiderProjects\SeleniumWebDriverProject\PageObjects\obj\Debug\net6.0\refint\PageObjects.dll
 C:\Users\Zolto\RiderProjects\SeleniumWebDriverProject\PageObjects\obj\Debug\net6.0\PageObjects.pdb
 C:\Users\Zolto\RiderProjects\SeleniumWebDriverProject\PageObjects\obj\Debug\net6.0\ref\PageObjects.dll
+C:\Users\Zolto\RiderProjects\SeleniumWebDriverProject\PageObjects\bin\Debug\net6.0\PageObjects.dll.config

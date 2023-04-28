@@ -389,6 +389,21 @@
           "lib/netstandard2.1/SeleniumExtras.WaitHelpers.dll": {}
         }
       },
+      "System.Configuration.ConfigurationManager/8.0.0-preview.3.23174.8": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.Cryptography.ProtectedData": "8.0.0-preview.3.23174.8"
+        },
+        "compile": {
+          "lib/net6.0/System.Configuration.ConfigurationManager.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/System.Configuration.ConfigurationManager.dll": {}
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
       "System.Reflection.Metadata/1.6.0": {
         "type": "package",
         "compile": {
@@ -396,6 +411,18 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Reflection.Metadata.dll": {}
+        }
+      },
+      "System.Security.Cryptography.ProtectedData/8.0.0-preview.3.23174.8": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.Security.Cryptography.ProtectedData.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/System.Security.Cryptography.ProtectedData.dll": {}
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "PageObjects/1.0.0": {
@@ -407,7 +434,8 @@
           "Selenium.Support": "4.9.0",
           "Selenium.WebDriver": "4.9.0",
           "Selenium.WebDriver.ChromeDriver": "112.0.5615.4900",
-          "SeleniumExtras.WaitHelpers": "1.0.2"
+          "SeleniumExtras.WaitHelpers": "1.0.2",
+          "System.Configuration.ConfigurationManager": "8.0.0-preview.3.23174.8"
         },
         "compile": {
           "bin/placeholder/PageObjects.dll": {}
@@ -995,6 +1023,36 @@
         "seleniumextras.waithelpers.nuspec"
       ]
     },
+    "System.Configuration.ConfigurationManager/8.0.0-preview.3.23174.8": {
+      "sha512": "En9WhYr7LvybtgpVpxekwcvmebE9YUQTMOFxWgKBGpaMEdOWlEbO7P0A5uQW73p9iiTo5V4TQKS2qoF9RhLNkw==",
+      "type": "package",
+      "path": "system.configuration.configurationmanager/8.0.0-preview.3.23174.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Configuration.ConfigurationManager.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Configuration.ConfigurationManager.targets",
+        "lib/net462/System.Configuration.ConfigurationManager.dll",
+        "lib/net462/System.Configuration.ConfigurationManager.xml",
+        "lib/net6.0/System.Configuration.ConfigurationManager.dll",
+        "lib/net6.0/System.Configuration.ConfigurationManager.xml",
+        "lib/net7.0/System.Configuration.ConfigurationManager.dll",
+        "lib/net7.0/System.Configuration.ConfigurationManager.xml",
+        "lib/net8.0/System.Configuration.ConfigurationManager.dll",
+        "lib/net8.0/System.Configuration.ConfigurationManager.xml",
+        "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll",
+        "lib/netstandard2.0/System.Configuration.ConfigurationManager.xml",
+        "system.configuration.configurationmanager.8.0.0-preview.3.23174.8.nupkg.sha512",
+        "system.configuration.configurationmanager.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
     "System.Reflection.Metadata/1.6.0": {
       "sha512": "COC1aiAJjCoA5GBF+QKL2uLqEBew4JsCkQmoHKbN3TlOZKa2fKLz5CpiRQKDz0RsAOEGsVKqOD5bomsXq/4STQ==",
       "type": "package",
@@ -1014,6 +1072,41 @@
         "system.reflection.metadata.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "System.Security.Cryptography.ProtectedData/8.0.0-preview.3.23174.8": {
+      "sha512": "RpFC2Vb5bCUOJP1IXBdqvFiW/drXP8YwuC/VGDZaG9sgnkvuhDJ2OkU9iLK5DOkdIIgvUx/lYQtMDApnFxXv1w==",
+      "type": "package",
+      "path": "system.security.cryptography.protecteddata/8.0.0-preview.3.23174.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Security.Cryptography.ProtectedData.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Security.Cryptography.ProtectedData.targets",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net462/System.Security.Cryptography.ProtectedData.dll",
+        "lib/net462/System.Security.Cryptography.ProtectedData.xml",
+        "lib/net6.0/System.Security.Cryptography.ProtectedData.dll",
+        "lib/net6.0/System.Security.Cryptography.ProtectedData.xml",
+        "lib/net7.0/System.Security.Cryptography.ProtectedData.dll",
+        "lib/net7.0/System.Security.Cryptography.ProtectedData.xml",
+        "lib/net8.0/System.Security.Cryptography.ProtectedData.dll",
+        "lib/net8.0/System.Security.Cryptography.ProtectedData.xml",
+        "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll",
+        "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "system.security.cryptography.protecteddata.8.0.0-preview.3.23174.8.nupkg.sha512",
+        "system.security.cryptography.protecteddata.nuspec",
+        "useSharedDesignerContext.txt"
       ]
     },
     "PageObjects/1.0.0": {

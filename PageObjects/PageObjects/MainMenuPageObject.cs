@@ -33,6 +33,13 @@ public class MainMenuPageObject
         driver.FindElement(headerListMenu["visa"]).Click();
         return new VisaPage(driver);
     }
+
+    public TransfersChooseCountryPageObject transferPageTo()
+    {
+        driver.FindElement(headerListMenu["transfers"]).Click();
+        Thread.Sleep(10000);
+        return new TransfersChooseCountryPageObject(driver);
+    }
     public Dictionary<string, By> accountListInHeader { get; private set; }= new Dictionary<string, By>()
     {
         { "Customer Login",   By.XPath("//a[text()= 'Customer Login']") },

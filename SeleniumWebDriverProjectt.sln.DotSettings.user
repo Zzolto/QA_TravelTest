@@ -9,7 +9,17 @@
     &lt;TestId&gt;NUnit3x::2280FFCE-8E3B-43A1-8B85-164BBD49D6D8::net6.0::Tests.WebFormTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=86c79366_002Df159_002D442e_002Db947_002D16ee1944003a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="WebFormTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=4b59f74d_002Dd545_002D49ed_002D86c5_002D5b98cf8b20d5/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="WebFormTests #6" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2280FFCE-8E3B-43A1-8B85-164BBD49D6D8::net6.0::Tests.WebFormTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=55c9db88_002D17cd_002D47de_002Da06c_002Dd90161d6d228/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="WebFormTests #7" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2280FFCE-8E3B-43A1-8B85-164BBD49D6D8::net6.0::Tests.WebFormTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=86c79366_002Df159_002D442e_002Db947_002D16ee1944003a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="WebFormTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;NUnit3x::2280FFCE-8E3B-43A1-8B85-164BBD49D6D8::net6.0::Tests.WebFormTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;

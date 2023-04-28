@@ -10,7 +10,7 @@ internal class WebFormTests:TestBase
     private IWebDriver _driver;
     private SubmissionFormPageObject _targetPageObject;
     [Test]
-    public void DoLogin()
+    public void DoByCustom()
     {
         var successfulText = "Your visa form has been submitted";
         var message = 
@@ -22,6 +22,16 @@ internal class WebFormTests:TestBase
                 .TargetPage()
                 .GetMessage();
         Assert.That(message, Is.EqualTo(successfulText));
+        MainMenu
+            .transferPageTo()
+            .chooseCountries();
+    }
+
+    
+    public void DoTransfer()
+    {
+        MainMenu
+            .transferPageTo();
     }
     
 }

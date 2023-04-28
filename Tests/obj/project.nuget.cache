@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "xEyNa3Vn+Q0RF7kPIxOWVBUd9QjtBzJvLXUhKaYfPW4VjAGxPgZ3bhDcATmqYf+vvCxeRpiBS+Iu8yhwG0/ygQ==",
+  "dgSpecHash": "JPXf3L+zbaDbK4fwG9SLwXH6zh+C+0GPNxIJElCxIfkERCJ6D6hhqO0JTDGHdqfwFweH4o95pFCyu5O2CQg9CQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Zolto\\RiderProjects\\SeleniumWebDriverProject\\Tests\\Tests.csproj",
   "expectedPackageFiles": [
@@ -18,7 +18,9 @@
     "C:\\Users\\Zolto\\.nuget\\packages\\selenium.webdriver\\4.9.0\\selenium.webdriver.4.9.0.nupkg.sha512",
     "C:\\Users\\Zolto\\.nuget\\packages\\selenium.webdriver.chromedriver\\112.0.5615.4900\\selenium.webdriver.chromedriver.112.0.5615.4900.nupkg.sha512",
     "C:\\Users\\Zolto\\.nuget\\packages\\seleniumextras.waithelpers\\1.0.2\\seleniumextras.waithelpers.1.0.2.nupkg.sha512",
-    "C:\\Users\\Zolto\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512"
+    "C:\\Users\\Zolto\\.nuget\\packages\\system.configuration.configurationmanager\\8.0.0-preview.3.23174.8\\system.configuration.configurationmanager.8.0.0-preview.3.23174.8.nupkg.sha512",
+    "C:\\Users\\Zolto\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512",
+    "C:\\Users\\Zolto\\.nuget\\packages\\system.security.cryptography.protecteddata\\8.0.0-preview.3.23174.8\\system.security.cryptography.protecteddata.8.0.0-preview.3.23174.8.nupkg.sha512"
   ],
   "logs": []
 }

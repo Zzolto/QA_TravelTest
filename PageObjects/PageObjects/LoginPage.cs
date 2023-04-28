@@ -1,6 +1,9 @@
 ﻿using System.Threading;
 using OpenQA.Selenium;
 using PageObjects.Helper;
+using System.Configuration;
+
+
 
 namespace BackitAuto;
 public class LoginPage:MainMenuPageObject
@@ -13,10 +16,12 @@ public class LoginPage:MainMenuPageObject
     protected readonly By button = By.XPath("//buttoon[@type = 'submit']");
     public MainMenuPageObject DoLogin()
     {
+        string _email = ConfigurationManager.AppSettings.Get("email");
+
         driver.FindElement(_accountButton).Click();
         driver.FindElement(accountListInHeader["Customer Login"]).Click();
         driver.FindElement(emailField).SendKeys("zolto_gunzenov@mail.ru");
-        driver.FindElement(passwordField).SendKeys("Zolto180700!");
+        driver.FindElement(passwordField).SendKeys("12345678");
         driver.FindElement(login).Click();
         return new MainMenuPageObject(driver);
     }

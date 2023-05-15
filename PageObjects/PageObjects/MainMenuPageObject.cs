@@ -73,11 +73,6 @@ public class MainMenuPageObject
 
     private List<IWebElement> elements;
 
-    public Dictionary<int, IWebElement> headerListMenuQ { get; private set; } = new Dictionary<int,IWebElement>()
-    {
-        {1, driver.FindElement(By.XPath($"//ul[@style = 'padding-top:10px!important']/child::li[{1}]"))}
-    };
-
     public void InitializeElements()
     {
         elements = new List<IWebElement>()

@@ -70,7 +70,10 @@ public class MainMenuPageObject
         {"company",By.XPath($"//ul[@style = 'padding-top:10px!important']/child::li[{8}]")},
     };
 
-
+    public LoginPage login()
+    {
+        return new LoginPage(driver);
+    }
     private List<IWebElement> elements;
 
     public void InitializeElements()

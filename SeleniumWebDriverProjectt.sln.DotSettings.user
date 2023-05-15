@@ -3,7 +3,7 @@
   &lt;Assembly Path="C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.5\ref\net6.0\System.Configuration.dll" /&gt;&#xD;
   &lt;PhysicalFolder Path="C:\Users\Zolto\RiderProjects\SeleniumWebDriverProject\PageObjects\PageObjects" Loaded="True" /&gt;&#xD;
 &lt;/AssemblyExplorer&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=01c11e90_002D8724_002D4289_002Db1dd_002D26de1d036ea9/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="WebFormTests #5" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=01c11e90_002D8724_002D4289_002Db1dd_002D26de1d036ea9/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="WebFormTests #5" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;NUnit3x::2280FFCE-8E3B-43A1-8B85-164BBD49D6D8::net6.0::Tests.WebFormTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
@@ -33,7 +33,7 @@
     &lt;TestId&gt;NUnit3x::2280FFCE-8E3B-43A1-8B85-164BBD49D6D8::net6.0::Tests.WebFormTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ba5b250f_002Dcdb5_002D4db0_002D9ce4_002Dde2cd857728c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="WebFormTests #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ba5b250f_002Dcdb5_002D4db0_002D9ce4_002Dde2cd857728c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="WebFormTests #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;NUnit3x::2280FFCE-8E3B-43A1-8B85-164BBD49D6D8::net6.0::Tests.WebFormTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;

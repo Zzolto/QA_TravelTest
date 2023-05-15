@@ -17,4 +17,7 @@
     <Import Project="$(NuGetPackageRoot)nunit3testadapter\4.5.0-alpha.4\build\netcoreapp3.1\NUnit3TestAdapter.props" Condition="Exists('$(NuGetPackageRoot)nunit3testadapter\4.5.0-alpha.4\build\netcoreapp3.1\NUnit3TestAdapter.props')" />
     <Import Project="$(NuGetPackageRoot)nunit\3.13.3\build\NUnit.props" Condition="Exists('$(NuGetPackageRoot)nunit\3.13.3\build\NUnit.props')" />
   </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgAspectInjector Condition=" '$(PkgAspectInjector)' == '' ">C:\Users\Zolto\.nuget\packages\aspectinjector\2.8.1</PkgAspectInjector>
+  </PropertyGroup>
 </Project>

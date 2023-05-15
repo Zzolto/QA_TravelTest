@@ -3,6 +3,8 @@ using NUnit.Framework;
 using OpenQA.Selenium.Chrome;
 using BackitAuto;
 using System.Configuration;
+using NUnit.Framework.Interfaces;
+using Utils;
 
 namespace Tests.Common
 {
@@ -13,10 +15,12 @@ namespace Tests.Common
     
         private readonly string _baseurl = "https://phptravels.net/";
         protected readonly By _accountButton = By.XPath("//button[@id='ACCOUNT']");
-    
+        protected AllureReporting AllureReporting { get; private set; }
+        
         [SetUp]
         protected void Setup()
         {
+            AllureReporting = new AllureReporting();
             string url = ConfigurationManager.AppSettings["Url"];
             Driver = new ChromeDriver();
             Driver.Manage().Cookies.DeleteAllCookies();
@@ -34,6 +38,17 @@ namespace Tests.Common
                 Driver.Quit();
             }
         }
-    
+
+        private void EndTest()
+        {
+            var testStatus = TestContext.CurrentContext.Result.Outcome.Status;
+            var message = TestContext.CurrentContext.Result.Message;
+
+            switch (testStatus)
+            {
+                case TestStatus.Failed:
+                    break;
+            }
+        }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Configuration;
+using System.Data;
 using System.Threading;
 using System.Threading.Channels;
 using NUnit.Framework;
@@ -39,6 +40,12 @@ public class MainMenuPageObject
         driver.FindElement(headerListMenu["transfers"]).Click();
         Thread.Sleep(10000);
         return new TransfersChooseCountryPageObject(driver);
+    }
+
+    public ToursPage redirectToTours()
+    {
+        driver.Click(headerListMenu["tours"]);
+        return new ToursPage(driver);
     }
     public Dictionary<string, By> accountListInHeader { get; private set; }= new Dictionary<string, By>()
     {

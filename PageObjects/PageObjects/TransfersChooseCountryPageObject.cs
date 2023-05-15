@@ -29,6 +29,7 @@ public class TransfersChooseCountryPageObject
 
     public IWebElement fromCountry;
     public IWebElement toCountry;
+
     public TransfersListPageObject chooseCountries()
     {
         var countriesFields = _driver.FindElements(chooseCountriesField);

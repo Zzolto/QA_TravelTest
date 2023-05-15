@@ -8,15 +8,51 @@
     ".NETCoreApp,Version=v6.0": {
       "Tests/1.0.0": {
         "dependencies": {
+          "Allure.NUnit": "2.9.5-preview.1",
           "Microsoft.NET.Test.Sdk": "17.5.0",
           "NUnit": "3.13.3",
           "NUnit3TestAdapter": "4.5.0-alpha.4",
           "PageObjects": "1.0.0",
           "Selenium.WebDriver": "4.9.0",
-          "Selenium.WebDriver.ChromeDriver": "112.0.5615.4900"
+          "Selenium.WebDriver.ChromeDriver": "112.0.5615.4900",
+          "Utils": "1.0.0"
         },
         "runtime": {
           "Tests.dll": {}
+        }
+      },
+      "Allure.Net.Commons/2.9.5-preview.1": {
+        "dependencies": {
+          "MimeTypesMap": "1.0.8",
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Allure.Net.Commons.dll": {
+            "assemblyVersion": "2.9.5.0",
+            "fileVersion": "2.9.5.0"
+          }
+        }
+      },
+      "Allure.NUnit/2.9.5-preview.1": {
+        "dependencies": {
+          "Allure.Net.Commons": "2.9.5-preview.1",
+          "AspectInjector": "2.8.1",
+          "NUnit": "3.13.3",
+          "NUnit.Engine.Api": "3.15.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Allure.NUnit.dll": {
+            "assemblyVersion": "2.9.5.0",
+            "fileVersion": "2.9.5.0"
+          }
+        }
+      },
+      "AspectInjector/2.8.1": {
+        "runtime": {
+          "lib/netstandard2.0/AspectInjector.Broker.dll": {
+            "assemblyVersion": "2.8.1.0",
+            "fileVersion": "2.8.1.0"
+          }
         }
       },
       "Microsoft.CodeCoverage/17.5.0": {
@@ -137,7 +173,7 @@
       "Microsoft.TestPlatform.TestHost/17.5.0": {
         "dependencies": {
           "Microsoft.TestPlatform.ObjectModel": "17.5.0",
-          "Newtonsoft.Json": "13.0.1"
+          "Newtonsoft.Json": "13.0.3"
         },
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.TestPlatform.CommunicationUtilities.dll": {
@@ -281,16 +317,24 @@
           }
         }
       },
+      "MimeTypesMap/1.0.8": {
+        "runtime": {
+          "lib/netstandard2.0/MimeTypesMap.dll": {
+            "assemblyVersion": "1.0.8.0",
+            "fileVersion": "1.0.8.0"
+          }
+        }
+      },
       "NETStandard.Library/2.0.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
         }
       },
-      "Newtonsoft.Json/13.0.1": {
+      "Newtonsoft.Json/13.0.3": {
         "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+          "lib/net6.0/Newtonsoft.Json.dll": {
             "assemblyVersion": "13.0.0.0",
-            "fileVersion": "13.0.1.25517"
+            "fileVersion": "13.0.3.27908"
           }
         }
       },
@@ -313,6 +357,14 @@
           }
         }
       },
+      "NUnit.Engine.Api/3.15.2": {
+        "runtime": {
+          "lib/netstandard2.0/nunit.engine.api.dll": {
+            "assemblyVersion": "3.0.0.0",
+            "fileVersion": "3.99.0.0"
+          }
+        }
+      },
       "NUnit3TestAdapter/4.5.0-alpha.4": {},
       "Selenium.Support/4.9.0": {
         "dependencies": {
@@ -327,7 +379,7 @@
       },
       "Selenium.WebDriver/4.9.0": {
         "dependencies": {
-          "Newtonsoft.Json": "13.0.1"
+          "Newtonsoft.Json": "13.0.3"
         },
         "runtime": {
           "lib/net6.0/WebDriver.dll": {
@@ -370,6 +422,7 @@
       },
       "PageObjects/1.0.0": {
         "dependencies": {
+          "Allure.NUnit": "2.9.5-preview.1",
           "NUnit": "3.13.3",
           "NUnit3TestAdapter": "4.5.0-alpha.4",
           "Selenium.Support": "4.9.0",
@@ -381,6 +434,67 @@
         "runtime": {
           "PageObjects.dll": {}
         }
+      },
+      "Utils/1.0.0": {
+        "runtime": {
+          "Utils.dll": {}
+        }
+      },
+      "ExtentReports/1.0.3.0": {
+        "runtime": {
+          "ExtentReports.dll": {
+            "assemblyVersion": "1.0.3.0",
+            "fileVersion": "1.0.3.0"
+          }
+        }
+      },
+      "MongoDB.Bson/2.8.0.0": {
+        "runtime": {
+          "MongoDB.Bson.dll": {
+            "assemblyVersion": "2.8.0.0",
+            "fileVersion": "2.8.0.0"
+          }
+        }
+      },
+      "MongoDB.Driver/2.8.0.0": {
+        "runtime": {
+          "MongoDB.Driver.dll": {
+            "assemblyVersion": "2.8.0.0",
+            "fileVersion": "2.8.0.0"
+          }
+        }
+      },
+      "RazorEngine.NetCore/0.0.0.0": {
+        "runtime": {
+          "RazorEngine.NetCore.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "MongoDB.Driver.Core/2.8.0.0": {
+        "runtime": {
+          "MongoDB.Driver.Core.dll": {
+            "assemblyVersion": "2.8.0.0",
+            "fileVersion": "2.8.0.0"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Razor.Language/2.2.0.0": {
+        "runtime": {
+          "Microsoft.AspNetCore.Razor.Language.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18316"
+          }
+        }
+      },
+      "DnsClient/1.2.0.0": {
+        "runtime": {
+          "DnsClient.dll": {
+            "assemblyVersion": "1.2.0.0",
+            "fileVersion": "1.2.0.0"
+          }
+        }
       }
     }
   },
@@ -389,6 +503,27 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Allure.Net.Commons/2.9.5-preview.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5Pc5v/3dA8c2l3aJe1dWsTRpQ4m9s/k8sP9YQ2MxuacTWDEvbEaMwZa6TfgzsPPq6XkJTYO3/jezhJCBDIQq5Q==",
+      "path": "allure.net.commons/2.9.5-preview.1",
+      "hashPath": "allure.net.commons.2.9.5-preview.1.nupkg.sha512"
+    },
+    "Allure.NUnit/2.9.5-preview.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ihrau3BgsYxo9g/lTjQKIq4grkJtBXLOCQMEtD9Mw376hBCsDNS1kAMTeDe30om8ZhxDJfa9ZwyaScohcqO6Eg==",
+      "path": "allure.nunit/2.9.5-preview.1",
+      "hashPath": "allure.nunit.2.9.5-preview.1.nupkg.sha512"
+    },
+    "AspectInjector/2.8.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8BScDeaLazJVFaa2Tt9hoWLhllnxXP3Sew+l/vktdZEcgoPOsqhlDqe6GXJvy7xVkdICAbKFsrcDJ0cfrDR6Mg==",
+      "path": "aspectinjector/2.8.1",
+      "hashPath": "aspectinjector.2.8.1.nupkg.sha512"
     },
     "Microsoft.CodeCoverage/17.5.0": {
       "type": "package",
@@ -425,6 +560,13 @@
       "path": "microsoft.testplatform.testhost/17.5.0",
       "hashPath": "microsoft.testplatform.testhost.17.5.0.nupkg.sha512"
     },
+    "MimeTypesMap/1.0.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-iOm6Zar+yVROhlyrGGSJTfThvNoHLUeYeQQND9YD/ot/nA2qsWUp9kP2MHTdF9P7I8afW6eCf8vdELLZjDFdSQ==",
+      "path": "mimetypesmap/1.0.8",
+      "hashPath": "mimetypesmap.1.0.8.nupkg.sha512"
+    },
     "NETStandard.Library/2.0.0": {
       "type": "package",
       "serviceable": true,
@@ -432,12 +574,12 @@
       "path": "netstandard.library/2.0.0",
       "hashPath": "netstandard.library.2.0.0.nupkg.sha512"
     },
-    "Newtonsoft.Json/13.0.1": {
+    "Newtonsoft.Json/13.0.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
-      "path": "newtonsoft.json/13.0.1",
-      "hashPath": "newtonsoft.json.13.0.1.nupkg.sha512"
+      "sha512": "sha512-HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
+      "path": "newtonsoft.json/13.0.3",
+      "hashPath": "newtonsoft.json.13.0.3.nupkg.sha512"
     },
     "NuGet.Frameworks/5.11.0": {
       "type": "package",
@@ -452,6 +594,13 @@
       "sha512": "sha512-KNPDpls6EfHwC3+nnA67fh5wpxeLb3VLFAfLxrug6JMYDLHH6InaQIWR7Sc3y75d/9IKzMksH/gi08W7XWbmnQ==",
       "path": "nunit/3.13.3",
       "hashPath": "nunit.3.13.3.nupkg.sha512"
+    },
+    "NUnit.Engine.Api/3.15.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-f9fFpqSARUxu58dsWrmI91CUbg8TDBSi/b+bgXZkmZSrh/5VlBiGHgtEWQnIg75hlLyJGYufU9H2tKk9joMXww==",
+      "path": "nunit.engine.api/3.15.2",
+      "hashPath": "nunit.engine.api.3.15.2.nupkg.sha512"
     },
     "NUnit3TestAdapter/4.5.0-alpha.4": {
       "type": "package",
@@ -511,6 +660,46 @@
     },
     "PageObjects/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Utils/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ExtentReports/1.0.3.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MongoDB.Bson/2.8.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MongoDB.Driver/2.8.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RazorEngine.NetCore/0.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MongoDB.Driver.Core/2.8.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Razor.Language/2.2.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DnsClient/1.2.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

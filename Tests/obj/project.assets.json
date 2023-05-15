@@ -2,6 +2,53 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "Allure.Net.Commons/2.9.5-preview.1": {
+        "type": "package",
+        "dependencies": {
+          "MimeTypesMap": "1.0.8",
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/Allure.Net.Commons.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Allure.Net.Commons.dll": {}
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        }
+      },
+      "Allure.NUnit/2.9.5-preview.1": {
+        "type": "package",
+        "dependencies": {
+          "Allure.Net.Commons": "2.9.5-preview.1",
+          "AspectInjector": "2.8.1",
+          "NUnit": "3.13.3",
+          "NUnit.Engine.Api": "3.15.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Allure.NUnit.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Allure.NUnit.dll": {}
+        }
+      },
+      "AspectInjector/2.8.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/AspectInjector.Broker.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/AspectInjector.Broker.dll": {}
+        },
+        "build": {
+          "buildTransitive/netstandard2.0/AspectInjector.targets": {}
+        }
+      },
       "Microsoft.CodeCoverage/17.5.0": {
         "type": "package",
         "compile": {
@@ -290,6 +337,15 @@
           "build/netcoreapp3.1/Microsoft.TestPlatform.TestHost.props": {}
         }
       },
+      "MimeTypesMap/1.0.8": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/MimeTypesMap.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/MimeTypesMap.dll": {}
+        }
+      },
       "NETStandard.Library/2.0.0": {
         "type": "package",
         "dependencies": {
@@ -305,13 +361,13 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
-      "Newtonsoft.Json/13.0.1": {
+      "Newtonsoft.Json/13.0.3": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+          "lib/net6.0/Newtonsoft.Json.dll": {}
         },
         "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+          "lib/net6.0/Newtonsoft.Json.dll": {}
         }
       },
       "NuGet.Frameworks/5.11.0": {
@@ -336,6 +392,15 @@
         },
         "build": {
           "build/NUnit.props": {}
+        }
+      },
+      "NUnit.Engine.Api/3.15.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/nunit.engine.api.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/nunit.engine.api.dll": {}
         }
       },
       "NUnit3TestAdapter/4.5.0-alpha.4": {
@@ -429,6 +494,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Allure.NUnit": "2.9.5-preview.1",
           "NUnit": "3.13.3",
           "NUnit3TestAdapter": "4.5.0-alpha.4",
           "Selenium.Support": "4.9.0",
@@ -443,10 +509,84 @@
         "runtime": {
           "bin/placeholder/PageObjects.dll": {}
         }
+      },
+      "Utils/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Utils.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Utils.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "Allure.Net.Commons/2.9.5-preview.1": {
+      "sha512": "5Pc5v/3dA8c2l3aJe1dWsTRpQ4m9s/k8sP9YQ2MxuacTWDEvbEaMwZa6TfgzsPPq6XkJTYO3/jezhJCBDIQq5Q==",
+      "type": "package",
+      "path": "allure.net.commons/2.9.5-preview.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Allure-Color.png",
+        "README.md",
+        "allure.net.commons.2.9.5-preview.1.nupkg.sha512",
+        "allure.net.commons.nuspec",
+        "content/allureConfig.Template.json",
+        "contentFiles/any/net45/allureConfig.Template.json",
+        "contentFiles/any/netstandard2.0/allureConfig.Template.json",
+        "lib/net45/Allure.Net.Commons.dll",
+        "lib/netstandard2.0/Allure.Net.Commons.dll"
+      ]
+    },
+    "Allure.NUnit/2.9.5-preview.1": {
+      "sha512": "ihrau3BgsYxo9g/lTjQKIq4grkJtBXLOCQMEtD9Mw376hBCsDNS1kAMTeDe30om8ZhxDJfa9ZwyaScohcqO6Eg==",
+      "type": "package",
+      "path": "allure.nunit/2.9.5-preview.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Allure-N-Color.png",
+        "LICENSE.md",
+        "README.md",
+        "allure.nunit.2.9.5-preview.1.nupkg.sha512",
+        "allure.nunit.nuspec",
+        "lib/netstandard2.0/Allure.NUnit.dll"
+      ]
+    },
+    "AspectInjector/2.8.1": {
+      "sha512": "8BScDeaLazJVFaa2Tt9hoWLhllnxXP3Sew+l/vktdZEcgoPOsqhlDqe6GXJvy7xVkdICAbKFsrcDJ0cfrDR6Mg==",
+      "type": "package",
+      "path": "aspectinjector/2.8.1",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "analyzers/dotnet/cs/AspectInjector.Analyzer.dll",
+        "analyzers/dotnet/cs/AspectInjector.Broker.dll",
+        "analyzers/dotnet/cs/AspectInjector.Rules.dll",
+        "analyzers/dotnet/cs/FluentIL.Common.dll",
+        "aspectinjector.2.8.1.nupkg.sha512",
+        "aspectinjector.nuspec",
+        "build/_bin/linux-arm64/AspectInjector",
+        "build/_bin/linux-musl-arm64/AspectInjector",
+        "build/_bin/linux-musl-x64/AspectInjector",
+        "build/_bin/linux-x64/AspectInjector",
+        "build/_bin/osx-arm64/AspectInjector",
+        "build/_bin/osx-x64/AspectInjector",
+        "build/_bin/win-arm64/AspectInjector.exe",
+        "build/_bin/win-x64/AspectInjector.exe",
+        "build/netstandard2.0/AspectInjector.targets",
+        "buildTransitive/netstandard2.0/AspectInjector.targets",
+        "lib/netstandard2.0/AspectInjector.Broker.dll",
+        "lib/netstandard2.0/AspectInjector.Broker.xml",
+        "package.png",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    },
     "Microsoft.CodeCoverage/17.5.0": {
       "sha512": "6FQo0O6LKDqbCiIgVQhJAf810HSjFlOj7FunWaeOGDKxy8DAbpHzPk4SfBTXz9ytaaceuIIeR6hZgplt09m+ig==",
       "type": "package",
@@ -720,6 +860,20 @@
         "microsoft.testplatform.testhost.nuspec"
       ]
     },
+    "MimeTypesMap/1.0.8": {
+      "sha512": "iOm6Zar+yVROhlyrGGSJTfThvNoHLUeYeQQND9YD/ot/nA2qsWUp9kP2MHTdF9P7I8afW6eCf8vdELLZjDFdSQ==",
+      "type": "package",
+      "path": "mimetypesmap/1.0.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/MimeTypesMap.dll",
+        "lib/netstandard1.1/MimeTypesMap.dll",
+        "lib/netstandard2.0/MimeTypesMap.dll",
+        "mimetypesmap.1.0.8.nupkg.sha512",
+        "mimetypesmap.nuspec"
+      ]
+    },
     "NETStandard.Library/2.0.0": {
       "sha512": "7jnbRU+L08FXKMxqUflxEXtVymWvNOrS8yHgu9s6EM8Anr6T/wIX4nZ08j/u3Asz+tCufp3YVwFSEvFTPYmBPA==",
       "type": "package",
@@ -850,14 +1004,15 @@
         "netstandard.library.nuspec"
       ]
     },
-    "Newtonsoft.Json/13.0.1": {
-      "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+    "Newtonsoft.Json/13.0.3": {
+      "sha512": "HrC5BXdl00IP9zeV+0Z848QWPAoCr9P3bDEZguI+gkLcBKAOxix/tLEAAHC+UvDNPv4a2d18lOReHMOagPa+zQ==",
       "type": "package",
-      "path": "newtonsoft.json/13.0.1",
+      "path": "newtonsoft.json/13.0.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.md",
+        "README.md",
         "lib/net20/Newtonsoft.Json.dll",
         "lib/net20/Newtonsoft.Json.xml",
         "lib/net35/Newtonsoft.Json.dll",
@@ -866,13 +1021,15 @@
         "lib/net40/Newtonsoft.Json.xml",
         "lib/net45/Newtonsoft.Json.dll",
         "lib/net45/Newtonsoft.Json.xml",
+        "lib/net6.0/Newtonsoft.Json.dll",
+        "lib/net6.0/Newtonsoft.Json.xml",
         "lib/netstandard1.0/Newtonsoft.Json.dll",
         "lib/netstandard1.0/Newtonsoft.Json.xml",
         "lib/netstandard1.3/Newtonsoft.Json.dll",
         "lib/netstandard1.3/Newtonsoft.Json.xml",
         "lib/netstandard2.0/Newtonsoft.Json.dll",
         "lib/netstandard2.0/Newtonsoft.Json.xml",
-        "newtonsoft.json.13.0.1.nupkg.sha512",
+        "newtonsoft.json.13.0.3.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "packageIcon.png"
       ]
@@ -917,6 +1074,21 @@
         "lib/netstandard2.0/nunit.framework.xml",
         "nunit.3.13.3.nupkg.sha512",
         "nunit.nuspec"
+      ]
+    },
+    "NUnit.Engine.Api/3.15.2": {
+      "sha512": "f9fFpqSARUxu58dsWrmI91CUbg8TDBSi/b+bgXZkmZSrh/5VlBiGHgtEWQnIg75hlLyJGYufU9H2tKk9joMXww==",
+      "type": "package",
+      "path": "nunit.engine.api/3.15.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "images/nunit_256.png",
+        "lib/net20/nunit.engine.api.dll",
+        "lib/netstandard2.0/nunit.engine.api.dll",
+        "nunit.engine.api.3.15.2.nupkg.sha512",
+        "nunit.engine.api.nuspec"
       ]
     },
     "NUnit3TestAdapter/4.5.0-alpha.4": {
@@ -1113,16 +1285,23 @@
       "type": "project",
       "path": "../PageObjects/PageObjects.csproj",
       "msbuildProject": "../PageObjects/PageObjects.csproj"
+    },
+    "Utils/1.0.0": {
+      "type": "project",
+      "path": "../Utils/Utils.csproj",
+      "msbuildProject": "../Utils/Utils.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Allure.NUnit >= 2.9.5-preview.1",
       "Microsoft.NET.Test.Sdk >= 17.5.0",
       "NUnit >= 3.13.3",
       "NUnit3TestAdapter >= 4.5.0-alpha.4",
       "PageObjects >= 1.0.0",
       "Selenium.WebDriver >= 4.9.0",
-      "Selenium.WebDriver.ChromeDriver >= 112.0.5615.4900"
+      "Selenium.WebDriver.ChromeDriver >= 112.0.5615.4900",
+      "Utils >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -1159,6 +1338,9 @@
           "projectReferences": {
             "C:\\Users\\Zolto\\RiderProjects\\SeleniumWebDriverProject\\PageObjects\\PageObjects.csproj": {
               "projectPath": "C:\\Users\\Zolto\\RiderProjects\\SeleniumWebDriverProject\\PageObjects\\PageObjects.csproj"
+            },
+            "C:\\Users\\Zolto\\RiderProjects\\SeleniumWebDriverProject\\Utils\\Utils.csproj": {
+              "projectPath": "C:\\Users\\Zolto\\RiderProjects\\SeleniumWebDriverProject\\Utils\\Utils.csproj"
             }
           }
         }
@@ -1173,6 +1355,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "Allure.NUnit": {
+            "target": "Package",
+            "version": "[2.9.5-preview.1, )"
+          },
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
             "version": "[17.5.0, )"

@@ -44,6 +44,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Allure.NUnit": {
+              "target": "Package",
+              "version": "[2.9.5-preview.1, )"
+            },
             "NUnit": {
               "target": "Package",
               "version": "[3.13.3, )"
@@ -122,6 +126,9 @@
             "projectReferences": {
               "C:\\Users\\Zolto\\RiderProjects\\SeleniumWebDriverProject\\PageObjects\\PageObjects.csproj": {
                 "projectPath": "C:\\Users\\Zolto\\RiderProjects\\SeleniumWebDriverProject\\PageObjects\\PageObjects.csproj"
+              },
+              "C:\\Users\\Zolto\\RiderProjects\\SeleniumWebDriverProject\\Utils\\Utils.csproj": {
+                "projectPath": "C:\\Users\\Zolto\\RiderProjects\\SeleniumWebDriverProject\\Utils\\Utils.csproj"
               }
             }
           }
@@ -136,6 +143,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Allure.NUnit": {
+              "target": "Package",
+              "version": "[2.9.5-preview.1, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[17.5.0, )"
@@ -174,6 +185,21 @@
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
         }
+      }
+    },
+    "C:\\Users\\Zolto\\RiderProjects\\SeleniumWebDriverProject\\Utils\\Utils.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Zolto\\RiderProjects\\SeleniumWebDriverProject\\Utils\\Utils.csproj",
+        "projectName": "Utils",
+        "projectPath": "C:\\Users\\Zolto\\RiderProjects\\SeleniumWebDriverProject\\Utils\\Utils.csproj",
+        "frameworks": {
+          "net48": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net48": {}
       }
     }
   }

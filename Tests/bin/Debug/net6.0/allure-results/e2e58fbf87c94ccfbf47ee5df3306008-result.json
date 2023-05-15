@@ -1,0 +1,67 @@
+{
+  "uuid": "903041a1-af16-4ac5-bb55-a290b48eea70-tr-0-1001",
+  "historyId": "Tests.WebFormTests.DoTransfer",
+  "fullName": "Tests.WebFormTests.DoTransfer",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-6RUCOTM"
+    },
+    {
+      "name": "package",
+      "value": "Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "DoTransfer"
+    },
+    {
+      "name": "testClass",
+      "value": "WebFormTests"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "owner",
+      "value": "John Smith"
+    }
+  ],
+  "links": [
+    {
+      "name": "BUG-123",
+      "url": "https://jira.com/browse/BUG-123",
+      "type": "issue"
+    },
+    {
+      "name": "TESTCASE-1",
+      "url": "https://testrail.com/browseTESTCASE-1",
+      "type": "tms"
+    }
+  ],
+  "name": "DoTransfer",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "DoTransfer"
+  },
+  "stage": "finished",
+  "steps": [],
+  "attachments": [
+    {
+      "name": "Console Output",
+      "source": "e95e2c51ad4244a68fd652d3c5a49296-attachment.txt",
+      "type": "text/plain"
+    }
+  ],
+  "parameters": [],
+  "start": 1684068094464,
+  "stop": 1684068143576
+}

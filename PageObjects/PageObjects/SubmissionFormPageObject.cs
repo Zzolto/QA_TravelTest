@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
 using PageObjects.Helper;
 
 namespace BackitAuto;
@@ -19,17 +20,23 @@ public class SubmissionFormPageObject
     }
     public TargetPageObject TargetPage()
     {
+        WebDriverWait wait = new WebDriverWait(_driver, TimeSpan.FromSeconds(10))
+        {
+            PollingInterval = TimeSpan.FromSeconds(1)
+        };
         _driver.FindElement(_firstNameField).SendKeys("Zolto");
         _driver.FindElement(CommonClass.secondNameField).SendKeys("Gunzenov");
         _driver.FindElement(CommonClass.phoneField).SendKeys("79834320108");
         _driver.FindElement(CommonClass.emailField).SendKeys("qw@mail.ru");
         _driver.FindElement(CommonClass.dateField).Click();
-        _driver.FindElement(todayDate).Click();
-        Thread.Sleep(1000);
-        IJavaScriptExecutor js = (IJavaScriptExecutor)_driver;
         
-        js.ExecuteScript("window.scrollBy(0, 500);");
-        Thread.Sleep(1000);
+        _driver.ScrollPage(0, 500);
+        _driver.WaitUntilElementIsVisible(todayDate).Click();
+        //_driver.WaitUntilElementIsVisible(todayDate);
+        //_driver.FindElement(todayDate).Click();
+        // IJavaScriptExecutor js = (IJavaScriptExecutor)_driver;
+        // js.ExecuteScript("window.scrollBy(0, 500);");
+        _driver.ScrollPage(0,500);
         _driver.FindElement(submitButton).Click();
         return new TargetPageObject(_driver);
     }

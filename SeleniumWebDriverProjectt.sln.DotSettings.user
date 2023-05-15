@@ -8,6 +8,16 @@
     &lt;TestId&gt;NUnit3x::2280FFCE-8E3B-43A1-8B85-164BBD49D6D8::net6.0::Tests.WebFormTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=382d8857_002Da986_002D4387_002Db07d_002Da79a46d3b23d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="UsersAPITest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2280FFCE-8E3B-43A1-8B85-164BBD49D6D8::net6.0::SeleniumWebDriverProjectt.TestsApi.UsersAPITest&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=3c3194bc_002Db329_002D4ff9_002D9d07_002D8827009d1b93/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GetUsersTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2280FFCE-8E3B-43A1-8B85-164BBD49D6D8::net6.0::SeleniumWebDriverProjectt.TestsApi.UsersAPITest.GetUsersTest&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=456b158d_002D6924_002D4683_002D8c1f_002De08955d1184c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="WebFormTests #4" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;NUnit3x::2280FFCE-8E3B-43A1-8B85-164BBD49D6D8::net6.0::Tests.WebFormTests&lt;/TestId&gt;&#xD;
@@ -33,8 +43,9 @@
     &lt;TestId&gt;NUnit3x::2280FFCE-8E3B-43A1-8B85-164BBD49D6D8::net6.0::Tests.WebFormTests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ba5b250f_002Dcdb5_002D4db0_002D9ce4_002Dde2cd857728c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="WebFormTests #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ba5b250f_002Dcdb5_002D4db0_002D9ce4_002Dde2cd857728c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="WebFormTests #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;NUnit3x::2280FFCE-8E3B-43A1-8B85-164BBD49D6D8::net6.0::Tests.WebFormTests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2280FFCE-8E3B-43A1-8B85-164BBD49D6D8::net6.0::SeleniumWebDriverProjectt.TestsApi.UsersAPITest.GetUsersTest&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

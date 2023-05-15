@@ -48,6 +48,10 @@
               "target": "Package",
               "version": "[2.9.5-preview.1, )"
             },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.6.0-preview-20230223-05, )"
+            },
             "NUnit": {
               "target": "Package",
               "version": "[3.13.3, )"

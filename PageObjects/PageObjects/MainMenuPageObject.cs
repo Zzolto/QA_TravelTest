@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Collections.Immutable;
 using System.Configuration;
 using System.Data;
 using System.Threading;
@@ -68,5 +69,21 @@ public class MainMenuPageObject
         {"offers",By.XPath($"//ul[@style = 'padding-top:10px!important']/child::li[{7}]")},
         {"company",By.XPath($"//ul[@style = 'padding-top:10px!important']/child::li[{8}]")},
     };
+
+
+    private List<IWebElement> elements;
+
+    public Dictionary<int, IWebElement> headerListMenuQ { get; private set; } = new Dictionary<int,IWebElement>()
+    {
+        {1, driver.FindElement(By.XPath($"//ul[@style = 'padding-top:10px!important']/child::li[{1}]"))}
+    };
+
+    public void InitializeElements()
+    {
+        elements = new List<IWebElement>()
+        {
+            driver.FindElement(By.XPath($"//ul[@style = 'padding-top:10px!important']/child::li[{1}]"))
+        };
+    }
 }
 

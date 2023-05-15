@@ -5,6 +5,7 @@ using BackitAuto;
 using System.Configuration;
 using NUnit.Framework.Interfaces;
 using Utils;
+using System;
 
 namespace Tests.Common
 {
@@ -38,6 +39,7 @@ namespace Tests.Common
                 Driver.Quit();
             }
         }
+        
 
         private void EndTest()
         {

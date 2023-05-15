@@ -16,4 +16,7 @@ public class TargetPageObject
         Thread.Sleep(1000);
         return Message.Text;
     }
+
+    public void ClickMessage() => Message.Click();
+
 }

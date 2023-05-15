@@ -1,5 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="..\packages\Microsoft.NET.Test.Sdk.17.6.0-preview-20230223-05\build\net462\Microsoft.NET.Test.Sdk.props" Condition="Exists('..\packages\Microsoft.NET.Test.Sdk.17.6.0-preview-20230223-05\build\net462\Microsoft.NET.Test.Sdk.props')" />
+    <Import Project="..\packages\Microsoft.CodeCoverage.17.6.0-preview-20230223-05\build\netstandard2.0\Microsoft.CodeCoverage.props" Condition="Exists('..\packages\Microsoft.CodeCoverage.17.6.0-preview-20230223-05\build\netstandard2.0\Microsoft.CodeCoverage.props')" />
     <Import Project="..\packages\NUnit3TestAdapter.4.5.0-alpha.4\build\net462\NUnit3TestAdapter.props" Condition="Exists('..\packages\NUnit3TestAdapter.4.5.0-alpha.4\build\net462\NUnit3TestAdapter.props')" />
     <Import Project="..\packages\Microsoft.CodeAnalysis.Analyzers.3.0.0\build\Microsoft.CodeAnalysis.Analyzers.props" Condition="Exists('..\packages\Microsoft.CodeAnalysis.Analyzers.3.0.0\build\Microsoft.CodeAnalysis.Analyzers.props')" />
     <Import Project="..\packages\NUnit.3.13.3\build\NUnit.props" Condition="Exists('..\packages\NUnit.3.13.3\build\NUnit.props')" />
@@ -80,6 +82,10 @@
           <Private>True</Private>
         </Reference>
         <Reference Include="Microsoft.CSharp" />
+        <Reference Include="Microsoft.VisualStudio.CodeCoverage.Shim, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+          <HintPath>..\packages\Microsoft.CodeCoverage.17.6.0-preview-20230223-05\lib\net462\Microsoft.VisualStudio.CodeCoverage.Shim.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
         <Reference Include="MimeTypesMap, Version=1.0.8.0, Culture=neutral, PublicKeyToken=1b320cc08ad5aa89">
           <HintPath>..\packages\MimeTypesMap.1.0.8\lib\net452\MimeTypesMap.dll</HintPath>
           <Private>True</Private>
@@ -217,8 +223,14 @@
       <Error Condition="!Exists('..\packages\Microsoft.CodeAnalysis.Analyzers.3.0.0\build\Microsoft.CodeAnalysis.Analyzers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeAnalysis.Analyzers.3.0.0\build\Microsoft.CodeAnalysis.Analyzers.props'))" />
       <Error Condition="!Exists('..\packages\Microsoft.CodeAnalysis.Analyzers.3.0.0\build\Microsoft.CodeAnalysis.Analyzers.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeAnalysis.Analyzers.3.0.0\build\Microsoft.CodeAnalysis.Analyzers.targets'))" />
       <Error Condition="!Exists('..\packages\NUnit3TestAdapter.4.5.0-alpha.4\build\net462\NUnit3TestAdapter.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\NUnit3TestAdapter.4.5.0-alpha.4\build\net462\NUnit3TestAdapter.props'))" />
+      <Error Condition="!Exists('..\packages\Microsoft.CodeCoverage.17.6.0-preview-20230223-05\build\netstandard2.0\Microsoft.CodeCoverage.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeCoverage.17.6.0-preview-20230223-05\build\netstandard2.0\Microsoft.CodeCoverage.props'))" />
+      <Error Condition="!Exists('..\packages\Microsoft.CodeCoverage.17.6.0-preview-20230223-05\build\netstandard2.0\Microsoft.CodeCoverage.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeCoverage.17.6.0-preview-20230223-05\build\netstandard2.0\Microsoft.CodeCoverage.targets'))" />
+      <Error Condition="!Exists('..\packages\Microsoft.NET.Test.Sdk.17.6.0-preview-20230223-05\build\net462\Microsoft.NET.Test.Sdk.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.NET.Test.Sdk.17.6.0-preview-20230223-05\build\net462\Microsoft.NET.Test.Sdk.props'))" />
+      <Error Condition="!Exists('..\packages\Microsoft.NET.Test.Sdk.17.6.0-preview-20230223-05\build\net462\Microsoft.NET.Test.Sdk.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.NET.Test.Sdk.17.6.0-preview-20230223-05\build\net462\Microsoft.NET.Test.Sdk.targets'))" />
     </Target>
     <Import Project="..\packages\Microsoft.CodeAnalysis.Analyzers.3.0.0\build\Microsoft.CodeAnalysis.Analyzers.targets" Condition="Exists('..\packages\Microsoft.CodeAnalysis.Analyzers.3.0.0\build\Microsoft.CodeAnalysis.Analyzers.targets')" />
+    <Import Project="..\packages\Microsoft.CodeCoverage.17.6.0-preview-20230223-05\build\netstandard2.0\Microsoft.CodeCoverage.targets" Condition="Exists('..\packages\Microsoft.CodeCoverage.17.6.0-preview-20230223-05\build\netstandard2.0\Microsoft.CodeCoverage.targets')" />
+    <Import Project="..\packages\Microsoft.NET.Test.Sdk.17.6.0-preview-20230223-05\build\net462\Microsoft.NET.Test.Sdk.targets" Condition="Exists('..\packages\Microsoft.NET.Test.Sdk.17.6.0-preview-20230223-05\build\net462\Microsoft.NET.Test.Sdk.targets')" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
          Other similar extension points exist, see Microsoft.Common.targets.
     <Target Name="BeforeBuild">
